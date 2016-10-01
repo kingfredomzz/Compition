@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="king.echomood.compition.adding_Question">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/add_question"
+        android:layout_marginTop="10dp"
+        android:hint="السؤال"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_Answ1"
+        android:hint="الاجابة ١"
+        android:layout_below="@+id/add_question"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_Answ2"
+        android:layout_below="@+id/set_Answ1"
+        android:layout_centerHorizontal="true"
+        android:hint="الاجابة ٢" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_Answ3"
+        android:layout_below="@+id/set_Answ2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="الاجابة ٣" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_Answ4"
+        android:layout_below="@+id/set_Answ3"
+        android:layout_centerHorizontal="true"
+        android:hint="الاجابة ٤" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_Answ4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Choice_1"
+            android:layout_gravity="center_horizontal"
+            android:text="1"
+            android:layout_weight="0.25" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Choice_2"
+            android:text="2"
+            android:layout_weight="0.25" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:id="@+id/Choice_3"
+            android:layout_weight="0.25" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:id="@+id/Choice_4"
+            android:layout_weight="0.25" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout4">
+
+        <EditText
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/Add_stage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="المرحلة"
+
+            android:layout_weight="0.25"
+            android:layout_gravity="center_vertical"
+            android:textAlignment="center" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_Type"
+            android:inputType="text"
+            android:layout_weight="0.38" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="النوع"
+            android:id="@+id/textView3"
+            android:layout_weight="0.25" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/two_15"
+            android:layout_weight="0.25"
+            android:text="2:15" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/one_45"
+            android:layout_weight="0.25"
+            android:text="1:45" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/one_20"
+            android:layout_weight="0.25"
+            android:text="1:20" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/one_minit"
+            android:layout_weight="0.25"
+            android:text="1:00" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="إلغاء"
+            android:id="@+id/cancelBtn"
+            android:layout_weight="1"
+            android:background="@color/answerBtn"
+            android:padding="10dp"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="إضافة"
+            android:id="@+id/add_Btn"
+            android:layout_weight="1"
+            android:background="@color/answerBtn"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+</RelativeLayout>
